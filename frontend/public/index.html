@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <script src="./vendors/jquery-3.6.0.min.js"></script>
+<!--    <link href="./vendors/bootstrap/bootstrap.min.css" rel="stylesheet"/>-->
+    <link href="index.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+    <link rel="icon" href="favicon.ico">
+<!--    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />-->
+    <title>House Search Engine</title>
+  </head>
+
+
+  <body>
+<!--    <noscript>You need to enable JavaScript to run this app.</noscript>-->
+<!--    <div id="root"></div>-->
+
+<!--header start-->
+<header class="header">
+  <div class="container">
+    <nav class="nav">
+      <a href="index.html" class="logo">
+        <img src="./images/logo.jpg" alt="">
+      </a>
+      <div class="hamburger-menu">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i>
+      </div>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Contact</a>
+        </li>
+      </ul>
+
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="container">
+      <div class="main-heading">
+        <h1 class="title">Discover</h1>
+        <h2 class="subtitle">Your Dream Home</h2>
+      </div>
+      <!-- <a href="#" class="btn btn-gradient">Explore now
+      <span class="dots"><i class="fas fa-ellipsis-h"></i></span></a> -->
+    </div>
+  </div>
+
+  <section class="searching">
+    <div class="container">
+      <form action="" class="form">
+        <div class="input-group">
+          <label for="location" class="input-label">Location</label>
+          <input type="text" class="input" id="location" placeholder="City,Address,ZIP">
+        </div>
+
+        <div class="input-group">
+          <label for="property_type" class="input-label">Property Type</label>
+          <select class="options" id="property_type">
+            <option value="apartment">Apartment</option>
+            <option value="condo">Condo</option>
+            <option value="townhouse">Townhouse</option>
+            <option value="singlefamily">SingleFamily</option>
+          </select>
+        </div>
+
+        <h2 class="feature" >Feature </h2>
+
+        <div class="input-group">
+<!--          <div class="row">-->
+          <input type="checkbox" value="PRICE"
+                 name="check-genre" id="chkbox-price"  checked/>
+          <label for="chkbox-price" class="input-label chbox"> Price</label>
+
+          <span class="stars">
+            <form action="">
+              <input class="star star-5" id="star-5" type="radio" name="star"/>
+              <label class="star star-5" for="star-5"></label>
+              <input class="star star-4" id="star-4" type="radio" name="star"/>
+              <label class="star star-4" for="star-4"></label>
+              <input class="star star-3" id="star-3" type="radio" name="star"/>
+              <label class="star star-3" for="star-3"></label>
+              <input class="star star-2" id="star-2" type="radio" name="star"/>
+              <label class="star star-2" for="star-2"></label>
+              <input class="star star-1" id="star-1" type="radio" name="star"/>
+              <label class="star star-1" for="star-1"></label>
+            </form>
+          </span>
+
+
+            <select class="options" id="price">
+              <option selected value="no min">no min</option>
+              <option value="100k">$100k</option>
+              <option value="200k">$200k</option>
+              <option value="500k">$500k</option>
+              <option value="1000k">$1000k</option>
+            </select>
+            <!--           <span>to</span>-->
+            <select class="options" id="price2">
+              <option selected value="no max">no max</option>
+              <option value="100k">$1000k</option>
+              <option value="200k">$2000k</option>
+              <option value="500k">$5000k</option>
+              <option value="1000k">$8000k</option>
+            </select>
+<!--          </div>-->
+          </div>
+
+        <div class="input-group">
+        <input type="checkbox" value="BEDROOM"
+               name="check-genre" id="chkbox-bedroom"  checked/>
+        <label for="chkbox-bedroom" class="input-label chbox">Bedroom</label>
+
+          <span class="stars">
+            <form action="">
+              <input class="star star-5" id="star-5-2" type="radio" name="star"/>
+              <label class="star star-5" for="star-5-2"></label>
+              <input class="star star-4" id="star-4-2" type="radio" name="star"/>
+              <label class="star star-4" for="star-4-2"></label>
+              <input class="star star-3" id="star-3-2" type="radio" name="star"/>
+              <label class="star star-3" for="star-3-2"></label>
+              <input class="star star-2" id="star-2-2" type="radio" name="star"/>
+              <label class="star star-2" for="star-2-2"></label>
+              <input class="star star-1" id="star-1-2" type="radio" name="star"/>
+              <label class="star star-1" for="star-1-2"></label>
+            </form>
+          </span>
+
+          <select class="options" id="bedroom">
+            <option value="0">1</option>
+            <option value="0">2</option>
+            <option value="0">3</option>
+            <option value="0">4</option>
+            <option value="0">5+</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <input type="checkbox" value="BATHROOM"
+                 name="check-genre" id="chkbox-bathroom"  checked/>
+          <label for="chkbox-bathroom" class="input-label chbox">Bath</label>
+
+          <span class="stars">
+            <form action="">
+              <input class="star star-5" id="star-5-3" type="radio" name="star"/>
+              <label class="star star-5" for="star-5-3"></label>
+              <input class="star star-4" id="star-4-3" type="radio" name="star"/>
+              <label class="star star-4" for="star-4-3"></label>
+              <input class="star star-3" id="star-3-3" type="radio" name="star"/>
+              <label class="star star-3" for="star-3-3"></label>
+              <input class="star star-2" id="star-2-3" type="radio" name="star"/>
+              <label class="star star-2" for="star-2-3"></label>
+              <input class="star star-1" id="star-1-3" type="radio" name="star"/>
+              <label class="star star-1" for="star-1-3"></label>
+            </form>
+          </span>
+
+          <select class="options" id="bathroom">
+            <option value="0">1</option>
+            <option value="0">2</option>
+            <option value="0">3+</option>
+
+          </select>
+        </div>
+
+        <div class="input-group">
+          <input type="checkbox" value="PARKINGSPACE"
+                 name="check-genre" id="chkbox-parkingSpace"  checked/>
+          <label for="chkbox-parkingSpace" class="input-label chbox">Parking Space</label>
+          <span class="stars">
+            <form action="">
+              <input class="star star-5" id="star-5-4" type="radio" name="star"/>
+              <label class="star star-5" for="star-5-4"></label>
+              <input class="star star-4" id="star-4-4" type="radio" name="star"/>
+              <label class="star star-4" for="star-4-4"></label>
+              <input class="star star-3" id="star-3-4" type="radio" name="star"/>
+              <label class="star star-3" for="star-3-4"></label>
+              <input class="star star-2" id="star-2-4" type="radio" name="star"/>
+              <label class="star star-2" for="star-2-4"></label>
+              <input class="star star-1" id="star-1-4" type="radio" name="star"/>
+              <label class="star star-1" for="star-1-4"></label>
+            </form>
+          </span>
+          <select class="options" id="parkingSpace">
+            <option value="0">1</option>
+            <option value="0">2</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <input type="checkbox" value="YEARBUILT"
+                 name="check-genre" id="chkbox-yearBuilt"  checked/>
+          <label for="chkbox-yearBuilt" class="input-label chbox">Year built</label>
+
+          <span class="stars">
+            <form action="">
+              <input class="star star-5" id="star-5-5" type="radio" name="star"/>
+              <label class="star star-5" for="star-5-5"></label>
+              <input class="star star-4" id="star-4-5" type="radio" name="star"/>
+              <label class="star star-4" for="star-4-5"></label>
+              <input class="star star-3" id="star-3-5" type="radio" name="star"/>
+              <label class="star star-3" for="star-3-5"></label>
+              <input class="star star-2" id="star-2-5" type="radio" name="star"/>
+              <label class="star star-2" for="star-2-5"></label>
+              <input class="star star-1" id="star-1-5" type="radio" name="star"/>
+              <label class="star star-1" for="star-1-5"></label>
+            </form>
+          </span>
+
+          <select class="options" id="yearBuilt">
+            <option value="0">after 2010</option>
+            <option value="0">2000 - 2009</option>
+            <option value="0">1990 - 1999</option>
+            <option value="0">1980 - 1989</option>
+            <option value="0">before 1980</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <input type="checkbox" value="SQUARE FEET"
+                 name="check-genre" id="chkbox-squareFeet"  checked/>
+          <label for="chkbox-squareFeet" class="input-label chbox">SQUARE FEET</label>
+          <span class="stars">
+            <form action="">
+              <input class="star star-5" id="star-5-6" type="radio" name="star"/>
+              <label class="star star-5" for="star-5-6"></label>
+              <input class="star star-4" id="star-4-6" type="radio" name="star"/>
+              <label class="star star-4" for="star-4-6"></label>
+              <input class="star star-3" id="star-3-6" type="radio" name="star"/>
+              <label class="star star-3" for="star-3-6"></label>
+              <input class="star star-2" id="star-2-6" type="radio" name="star"/>
+              <label class="star star-2" for="star-2-6"></label>
+              <input class="star star-1" id="star-1-6" type="radio" name="star"/>
+              <label class="star star-1" for="star-1-6"></label>
+            </form>
+          </span>
+          <select class="options" id="lotSize">
+            <option value="0">under 1000</option>
+            <option value="0">1000 - 1499</option>
+            <option value="0">1500 - 1999</option>
+            <option value="0">2000 - 2499</option>
+            <option value="0">2500+</option>
+          </select>
+        </div>
+
+
+        <button type="submit" class="btn form-btn btn-purple">Search
+          <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <section class="sales">
+    <div class="container">
+      <h5 class="section-head">
+        <span class="heading">NEW LISTING</span>
+        <span class="sub-heading">view all listing in the last week</span>
+      </h5>
+    </div>
+    <div class="grid">
+      <div class="grid-item featured-house">
+        <img src="./images/house1.jpg" alt="" class="house-image">
+        <h3 class="sale-price">From $500k</h3>
+        <div class="bed-bath">
+          4 bed 4bath 150 sqm
+        </div>
+        <div class="address">
+          411 park Ave, SAN JOSE, CA 95110
+        </div>
+        <a href="#" class="btn btn-gradient">Take a look
+        <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+        </a>
+      </div>
+
+      <div class="grid-item featured-house">
+        <img src="./images/house2.jpg" alt="" class="house-image">
+        <h3 class="sale-price">From $730k</h3>
+        <div class="bed-bath">
+          6 bed  4bath  210 sqm
+        </div>
+        <div class="address">
+          411 park Ave, SAN JOSE, CA 95110
+        </div>
+        <a href="#" class="btn btn-gradient">Take a look
+          <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+        </a>
+      </div>
+
+      <div class="grid-item featured-house">
+        <img src="./images/house3.jpg" alt="" class="house-image">
+        <h3 class="sale-price">From $350k</h3>
+        <div class="bed-bath">
+          4 bed 2bath 110 sqm
+        </div>
+        <div class="address">
+          411 park Ave, SAN JOSE, CA 95110
+        </div>
+        <a href="#" class="btn btn-gradient">Take a look
+          <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+        </a>
+      </div>
+
+
+
+    </div>
+
+  </section>
+</main>
+
+
+
+<script src="./index.js"></script>
+
+  </body>
+</html>
