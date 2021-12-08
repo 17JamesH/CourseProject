@@ -58,26 +58,9 @@ section{
 }
 
 .logo img{
-    max-width:12%;
-}
-.hamburger-menu{
-    font-size:2.6rem;
-    color:#fff;
-    cursor:pointer;
-    position: relative;
-    z-index:1500;
+    max-width:10%;
 }
 
-.hamburger-menu .fa-times{
-    display: none;
-}
-.menu-open .hamburger-menu .fa-times{
-    display: block;
-}
-
-.menu-open .hamburger-menu .fa-bars{
-    display: none;
-}
 .nav-list{
     position:fixed;
     top:0;
@@ -94,10 +77,7 @@ section{
     /*transform: scale(0);*/
     transition:opacity .5s;
 }
-.menu-open .nav-list{
-    opacity:1;
-    transform:scale(1);
-}
+
 .nav-item:not(:last-child){
     margin-bottom: .5rem;
 }
@@ -146,7 +126,7 @@ section{
     height: 100vh;
     background-image: url('./Home/Components/hero_background4.jpg');
     background-size: cover;
-    display: flex;
+    display: block;
     align-items:center;
     justify-content: center;
     text-align:center;
