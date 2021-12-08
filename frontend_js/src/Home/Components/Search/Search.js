@@ -9,7 +9,8 @@ const Search = () =>{
             <form action="" class="form">
                 <div class="input-group">
                     <label for="location" class="input-label">Location</label>
-                    <input type="text" class="input" id="location" placeholder="City,Address,ZIP"/>
+                    <input type="text" class="input" id="location" placeholder="Street"/>
+                    <input type="text" class="input" id="location" placeholder="ZIP Code"/>
                 </div>
 
                 <div class="input-group">
@@ -18,18 +19,12 @@ const Search = () =>{
                         <option value="apartment">Apartment</option>
                         <option value="condo">Condo</option>
                         <option value="townhouse">Townhouse</option>
-                        <option value="singlefamily">SingleFamily</option>
+                        <option value="singlefamily">Single Family</option>
                     </select>
                 </div>
 
-                <h2 class="feature" >Feature </h2>
-
                 <div class="input-group">
-                    <input type="checkbox" value="PRICE"
-                           name="check-genre" id="chkbox-price"  defaultChecked={true}/>
-                    {/*<Checkbox/>*/}
-                    <label for="chkbox-price" class="input-label chbox"> Price</label>
-
+                    <label for="price" class="input-label"> Price</label>
                     <Stars/>
 
                     <select class="options" id="price">
@@ -49,10 +44,7 @@ const Search = () =>{
                 </div>
 
                 <div class="input-group">
-                    <input type="checkbox" value="BEDROOM"
-                           name="check-genre" id="chkbox-bedroom" defaultChecked={true}/>
-                    <label for="chkbox-bedroom" class="input-label chbox">Bedroom</label>
-
+                    <label for="bedroom" class="input-label">Bedroom</label>
                     <Stars/>
 
                     <select class="options" id="bedroom">
@@ -65,10 +57,7 @@ const Search = () =>{
                 </div>
 
                 <div class="input-group">
-                    <input type="checkbox" value="BATHROOM"
-                           name="check-genre" id="chkbox-bathroom"  defaultChecked={true}/>
-                    <label for="chkbox-bathroom" class="input-label chbox">Bath</label>
-
+                    <label for="bathroom" class="input-label">Bathroom</label>
                     <Stars/>
 
                     <select class="options" id="bathroom">
@@ -79,50 +68,11 @@ const Search = () =>{
                     </select>
                 </div>
 
-                <div class="input-group">
-                    <input type="checkbox" value="PARKINGSPACE"
-                           name="check-genre" id="chkbox-parkingSpace"  defaultChecked={true}/>
-                    <label for="chkbox-parkingSpace" class="input-label chbox">Parking Space</label>
-                    <Stars/>
-                    <select class="options" id="parkingSpace">
-                        <option value="0">1</option>
-                        <option value="0">2</option>
-                    </select>
-                </div>
-
-                <div class="input-group">
-                    <input type="checkbox" value="YEARBUILT"
-                           name="check-genre" id="chkbox-yearBuilt"  defaultChecked={true}/>
-                    <label for="chkbox-yearBuilt" class="input-label chbox">Year built</label>
-
-                    <Stars/>
-
-                    <select class="options" id="yearBuilt">
-                        <option value="0">after 2010</option>
-                        <option value="0">2000 - 2009</option>
-                        <option value="0">1990 - 1999</option>
-                        <option value="0">1980 - 1989</option>
-                        <option value="0">before 1980</option>
-                    </select>
-                </div>
-
-                <div class="input-group">
-                    <input type="checkbox" value="SQUARE FEET"
-                           name="check-genre" id="chkbox-squareFeet"  defaultChecked={true}/>
-                    <label for="chkbox-squareFeet" class="input-label chbox">SQUARE FEET</label>
-                    <Stars/>
-                    <select class="options" id="lotSize">
-                        <option value="0">under 1000</option>
-                        <option value="0">1000 - 1499</option>
-                        <option value="0">1500 - 1999</option>
-                        <option value="0">2000 - 2499</option>
-                        <option value="0">2500+</option>
-                    </select>
-                </div>
 
 
-                <button type="submit" class="btn  form-btn btn-purple">Search
-                    <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+
+                <button type="submit" class="search_btn">Search
+
                 </button>
             </form>
         </div>
