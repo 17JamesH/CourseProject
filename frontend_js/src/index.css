@@ -167,8 +167,6 @@ section{
     text-align: center; 
 }
 
-
-
 .btn-gradient{
     background-image: var(--gradient-color);
 }
@@ -292,17 +290,50 @@ section{
     font-size: 3rem;
 }
 
-.chbox{
-    margin-left: 6px!important;
+.resDisplay {
+    width:100%;
+    max-width:120rem;
+    padding:0 1.5rem;
+    margin:0 auto;
 }
-
 
 input[type="radio"]{
     display: none;
 }
-.star{
-    margin-top:1.5rem;
-    margin-left: 1rem;
-    cursor:pointer;
-    transition: color 200ms;
+
+#resTable tr:nth-child(even){background-color: #f2f2f2;}
+#resTable tr:hover {background-color: #ddd;}
+
+#resTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #04AA6D;
+  color: white;
+}
+
+#resTable {
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#resTable td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.resDisplay{
+    margin-top: 2rem;
+    background-image:var(--gradient-color);
+    width:100%;
+    height: 100vh;
+    background-size: cover;
+    display: block;
+    align-items:center;
+    justify-content: center;
+    text-align:center;
+    position:relative;
 }
