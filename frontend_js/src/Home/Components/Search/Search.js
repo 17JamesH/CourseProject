@@ -1,17 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import Stars from "./Stars";
 import Checkbox from "./Checkbox";
+import SearchResult from "./SearchResult";
 
 const Search = () => {
     const entryIds = ["street", "zip", "property_type", "price", "price2", "bedroom", "bathroom"]
+    const [result, setResult] = useState([]);
+    console.log(result);
     const search = async () => {
         console.log("Searching");
         fetch('https://housing-data-cs-427-uiuc.s3.us-west-2.amazonaws.com/housingdata.json')
         .then(response => response.json())
-        .then(data => console.log(data));
-        // entryIds.forEach(() => {
-        // })
-    } 
+        .then(data => setResult(data));
+    }
 
     return(
         <div className="searching">
@@ -85,7 +86,7 @@ const Search = () => {
                     Search
             </button>
         </div>
-
+        <SearchResult data={result} />
     </div>
     );
 }

@@ -1,16 +1,16 @@
 import React from 'react';
 
-const SearchResult = (data) => {
+const SearchResult = ({data}) => {
     return (
     <table>
         <tr>
             <th> price </th>
             <th> type </th>
             <th> bed </th>
-            <th> price </th>
-            <th> price </th>
-            <th> price </th>
-            <th> price </th>
+            <th> bath </th>
+            <th> city </th>
+            <th> zip </th>
+            <th> street </th>
         </tr>
         {
             data.map((property) => (
@@ -29,3 +29,5 @@ const SearchResult = (data) => {
         
     )
 }
+
+export default SearchResult;
