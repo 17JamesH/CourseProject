@@ -5,11 +5,12 @@ import Checkbox from "./Checkbox";
 const Search = () => {
     const entryIds = ["street", "zip", "property_type", "price", "price2", "bedroom", "bathroom"]
     const search = async () => {
+        console.log("Searching");
         fetch('https://housing-data-cs-427-uiuc.s3.us-west-2.amazonaws.com/housingdata.json')
         .then(response => response.json())
         .then(data => console.log(data));
-        entryIds.forEach(() => {
-        })
+        // entryIds.forEach(() => {
+        // })
     } 
 
     return(
@@ -76,14 +77,13 @@ const Search = () => {
 
                     </select>
                 </div>
-
-
-
-
-                <button type="submit" class="search_btn">Search
-
-                </button>
             </form>
+            <button 
+                    class="search_btn"
+                    onClick={() => search()}
+                >
+                    Search
+            </button>
         </div>
 
     </div>
