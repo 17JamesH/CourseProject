@@ -37,6 +37,7 @@ const Search = () => {
 
     return(
         <div className="searching">
+<<<<<<< HEAD
         <div className="container">
             <form action="" className="form">
                 <div className="input-group">
@@ -49,6 +50,20 @@ const Search = () => {
                 <div className="input-group">
                     <label htmlFor="propertyType" className="input-label">Property Type</label>
                     <select className="options" id="propertyType">
+=======
+        <div class="container">
+            <form action="" class="form">
+                <div class="input-group">
+                    <label for="location" class="input-label">Location</label>
+                    <input type="text" class="input" id="street" placeholder="Street"/>
+                    <input type="text" class="input" id="city" placeholder="City"/>
+                    <input type="text" class="input" id="zip" placeholder="ZIP Code"/>
+                </div>
+
+                <div class="input-group">
+                    <label for="propertyType" class="input-label">Property Type</label>
+                    <select class="options" id="propertyType">
+>>>>>>> a0e697cf93df29f974cee9bf9ce76ff73f974b8c
                         <option value={undefined}> All </option>
                         <option value="multi-family">Multi-Family</option>
                         <option value="condo">Condo</option>
@@ -79,7 +94,11 @@ const Search = () => {
                 <div className="input-group">
                     <label htmlFor="bedroom" className="input-label">Bedroom</label>
 
+<<<<<<< HEAD
                     <select className="options" id="bedroom">
+=======
+                    <select class="options" id="bedroom">
+>>>>>>> a0e697cf93df29f974cee9bf9ce76ff73f974b8c
                         <option value={null}> All </option>
                         <option value={1}>1</option>
                         <option value={2}>2</option>
@@ -92,7 +111,11 @@ const Search = () => {
                 <div className="input-group">
                     <label htmlFor="bathroom" className="input-label">Bathroom</label>
 
+<<<<<<< HEAD
                     <select className="options" id="bathroom">
+=======
+                    <select class="options" id="bathroom">
+>>>>>>> a0e697cf93df29f974cee9bf9ce76ff73f974b8c
                         <option value={null}> All </option>
                         <option value={1}>1</option>
                         <option value={2}>2</option>
