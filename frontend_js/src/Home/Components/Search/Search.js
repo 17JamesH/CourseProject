@@ -2,15 +2,24 @@ import React from "react";
 import Stars from "./Stars";
 import Checkbox from "./Checkbox";
 
-const Search = () =>{
+const Search = () => {
+    const entryIds = ["street", "zip", "property_type", "price", "price2", "bedroom", "bathroom"]
+    const search = async () => {
+        fetch('https://housing-data-cs-427-uiuc.s3.us-west-2.amazonaws.com/housingdata.json')
+        .then(response => response.json())
+        .then(data => console.log(data));
+        entryIds.forEach(() => {
+        })
+    } 
+
     return(
         <div className="searching">
         <div class="container">
             <form action="" class="form">
                 <div class="input-group">
                     <label for="location" class="input-label">Location</label>
-                    <input type="text" class="input" id="location" placeholder="Street"/>
-                    <input type="text" class="input" id="location" placeholder="ZIP Code"/>
+                    <input type="text" class="input" id="street" placeholder="Street"/>
+                    <input type="text" class="input" id="zip" placeholder="ZIP Code"/>
                 </div>
 
                 <div class="input-group">
