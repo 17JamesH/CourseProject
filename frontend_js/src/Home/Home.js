@@ -11,7 +11,6 @@ const Home = ()=>{
             <main>
                 <Main/>
                 <Search/>
-                <SearchResult/>
                 <NewListing/>
             </main>
 

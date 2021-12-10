@@ -109,8 +109,10 @@ const Search = () => {
                 >
                     Search
             </button>
+            {
+            result[0] && (<SearchResult data={result}/>)
+            }
         </div>
-
     </div>
     );
 }
